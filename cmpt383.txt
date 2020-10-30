@@ -1,0 +1,8 @@
+Project Name: Xenoglossy
+Contributor(s): Kenney Wu - 301265047
+
+-Project Idea
+--Calculation on the Web
+---The main idea is to accept input from a user on a web page (Numbers, Operation, etc.), and return/display a result to the user. The languages used for this project will be Javascript, Python, and C++. The Javascript in the browser will communicate with Python, which will send off data to the C++ to perform the calculations, before returning it all back.
+---A REST API built with Python will be used to communicate with the Javascript web page. The Python backend will use one of Boost.Python/SWIG to communicate with the C++.
+-Deployment Technology: I will be using the Vagrant + Chef template.
