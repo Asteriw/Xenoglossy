@@ -21,8 +21,12 @@ Final Submission Commentary
 //////////////////////////////////////////////////////////////////////////////
 
 -Project Idea: WolframAlpha Clone
+	The grand idea behind the project is to achieve something similar to WolframAlpha. I think there's always a need for a multipurpose calculator. If this project were able to be fully realized, it would be a highly optimized offline solver.
 
--Languages Used: JavaScript, Python, C
+-Languages Used: 
+	-JavaScript: The Javascript in this project is used to populate elements on the html. The elements are then used in Python to sort by case.
+	-Python: The Python listens for the POST requests made by the page through the Flask service. Once it receives a POST, it takes values from the 	page and then inputs them into C functions bound using ctypes.
+	-C: The C functions are called through Python's ctypes.
 
 -Language Communication: Javascript -> (Flask API) -> Python -> (ctypes) -> C
 
