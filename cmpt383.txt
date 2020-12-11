@@ -33,6 +33,8 @@ Final Submission Commentary
 	4 - On your host, open up the "webpage.html" in a browser
 	5 - Use the Calculator
 
+	Special Notes: Needs Flask to be installed ("pip3 install flask")
+
 -Features to look for: The basic state of the project currently only handles simple calculations (Addition, Subtraction, Multiplication, Division) and trig calculations. As far as I am aware, no reasonable inputs will crash the functionality. However, the handling for nonsensical inputs is currently very bland.
 	
 -Possible Issues: 
