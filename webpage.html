@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="A simple calculator created for a CMPT383 project." />
+  <meta charset="utf-8">
+  <title>Polyglot Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body onload="popList()">
+  
+<div class="container">
+
+<p>This website allows you to do simple calculations.</p>
+<p>Enter numbers into the input boxes, select your operator, and press evaluate.</p>
+
+<h1>Polyglot Calculator</h1>
+
+</div>
+<div>
+
+<p></p>
+
+<form name="simpForm" id="simpForm" action="http://127.0.0.1:8080/simpleRes" method="POST">
+  <p>Simple Calculator</p>
+
+
+  Operand 1: <input type="number" id="operand1" name="operand1"><br><br>
+
+  Operand 2: <input type="number" id="operand2" name="operand2"><br><br>
+
+  Operators: <select name="operatorList" id="operatorList">
+    <option value="" selected="selected"></option>
+  </select><br><br>
+
+
+  <input type="submit" value="Evaluate"><br><br><br>
+
+</form>
+  
+</div>
+
+<div>
+
+<form name="trigForm" id="trigForm" action="http://127.0.0.1:8080/trigRes" method="POST">
+
+  <p>Right Triangle Solver</p>
+
+
+  Operand 1: <input type="number" id="trigOp1" name="trigOp1">
+  <select name="trigList1" id="trigList1">
+    <option value="" selected="selected"></option>
+  </select><br><br>
+
+  Operand 2: <input type="number" id="trigOp2" name="trigOp2">
+  <select name="trigList2" id="trigList2">
+    <option value="" selected="selected"></option>
+  </select><br><br>
+
+  Operation: <select name="trigOpList" id="trigOpList">
+    <option value="" selected="selected"></option>
+  </select><br><br>
+
+  Trig Function: <select name="trigFuncList" id="trigFuncList">
+    <option value="" selected="selected"></option>
+  </select><br><br>
+
+
+  <input type="submit" value="Evaluate">  
+
+</form>
+  
+</div>
+
+<script src="scripts.js"></script>
+<!-- <script src="jquery-3.5.1.min.js"></script> -->
+
+</body>
+
+<div class="footer">
+<p>Created by Kenney Wu for CMPT383 at Simon Fraser University in 2020</p>
+</div>
+
+<style>
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: black;
+   font-size: 12px;
+   text-align: center;
+  }
+</style>
+
+</html>

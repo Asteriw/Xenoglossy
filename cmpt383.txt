@@ -1,8 +1,43 @@
 Project Name: Xenoglossy
 Contributor(s): Kenney Wu - 301265047
 
+//////////////////////////////////////////////////////////////////////////////
+Assignment 7 Commentary
+//////////////////////////////////////////////////////////////////////////////
+
 -Project Idea
+
 --Calculation on the Web
+
 ---The main idea is to accept input from a user on a web page (Numbers, Operation, etc.), and return/display a result to the user. The languages used for this project will be Javascript, Python, and C++. The Javascript in the browser will communicate with Python, which will send off data to the C++ to perform the calculations, before returning it all back.
+
 ---A REST API built with Python will be used to communicate with the Javascript web page. The Python backend will use one of Boost.Python/SWIG to communicate with the C++.
+
 -Deployment Technology: I will be using the Vagrant + Chef template.
+
+
+//////////////////////////////////////////////////////////////////////////////
+Final Submission Commentary
+//////////////////////////////////////////////////////////////////////////////
+
+-Project Idea: WolframAlpha Clone
+
+-Languages Used: JavaScript, Python, C
+
+-Language Communication: Javascript -> (Flask API) -> Python -> (ctypes) -> C
+
+-Steps to running: 
+	1 - Run "vagrant up" in the Xenoglossy folder
+	2 - After the VM is started, ssh into it using "vagrant ssh"
+	3 - In the project folder, run "python3 service.py" to start the Flask service
+	4 - On your host, open up the "webpage.html" in a browser
+	5 - Use the Calculator
+
+-Features to look for: The basic state of the project currently only handles simple calculations (Addition, Subtraction, Multiplication, Division) and trig calculations. As far as I am aware, no reasonable inputs will crash the functionality. However, the handling for nonsensical inputs is currently very bland.
+	
+-Possible Issues: 
+	--My Windows 10 installation had OpenSSH installed as an additional feature. This caused "vagrant ssh" to encounter issues [permission denied (publickey)]. To fix this I typed "Optional Features" into 		the Windows Start Menu, and uninstalled "OpenSSH Client". This fixed this issue for me.
+
+-Future Plans: Following a similar idea, with enough work and polish, the website would be able to handle complex commands and calculations. Initially, the website was also intended to take in and sort arrays, but there wasn't enough time to work on this (as well as thinking that JSON may have been more suitable for that).
+
+-Additional Comments: It's not much, but it works :)
